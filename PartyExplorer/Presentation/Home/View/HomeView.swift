@@ -31,6 +31,16 @@ struct HomeView<ViewModel: HomeViewModelProtocol>: View {
             .task {
                 await viewModel.fetchPartyList()
             }
+            .alert("Error", isPresented: $viewModel.showErrorAlert) {
+                Button("Try Again") {
+                    Task {
+                        await viewModel.fetchPartyList()
+                    }
+                }
+                Button("OK", role: .cancel) {}
+            } message: {
+                Text(viewModel.errorMessage)
+            }
         }
     }
 }

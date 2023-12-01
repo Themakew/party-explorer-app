@@ -10,6 +10,8 @@ import SwiftUI
 protocol HomeViewModelProtocol: ObservableObject {
     var searchText: String { get set }
     var filteredParties: [PartyEntity] { get }
+    var showErrorAlert: Bool { get set }
+    var errorMessage: String { get }
 
     func fetchPartyList() async
     func generateRandomParty()
@@ -17,6 +19,8 @@ protocol HomeViewModelProtocol: ObservableObject {
 
 final class HomeViewModel: HomeViewModelProtocol {
     @Published var filteredParties = [PartyEntity]()
+    @Published var showErrorAlert = false
+    @Published var errorMessage: String = ""
     @Published var searchText: String = "" {
         didSet {
             filterParties()
@@ -45,7 +49,8 @@ final class HomeViewModel: HomeViewModelProtocol {
             parties = dataFetched.map(PartyEntity.init)
             filteredParties = parties
         } catch {
-            // TODO
+            errorMessage = "Failed to fetch party data, try again"
+            showErrorAlert = true
         }
     }
 

@@ -22,6 +22,7 @@
 		564FB9702B1A7C5400B2B523 /* PartyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564FB96F2B1A7C5400B2B523 /* PartyEntity.swift */; };
 		564FB9742B1A7CBF00B2B523 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564FB9732B1A7CBF00B2B523 /* Double+Extension.swift */; };
 		564FB9762B1A7CD300B2B523 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564FB9752B1A7CD300B2B523 /* Date+Extension.swift */; };
+		564FB9782B1A7DC000B2B523 /* PartyRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564FB9772B1A7DC000B2B523 /* PartyRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		564FB96F2B1A7C5400B2B523 /* PartyEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyEntity.swift; sourceTree = "<group>"; };
 		564FB9732B1A7CBF00B2B523 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		564FB9752B1A7CD300B2B523 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		564FB9772B1A7DC000B2B523 /* PartyRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				564FB9332B1A71F600B2B523 /* HomeView.swift */,
+				564FB9772B1A7DC000B2B523 /* PartyRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				564FB9682B1A766D00B2B523 /* PartyService.swift in Sources */,
 				564FB9662B1A74F400B2B523 /* APIResquest.swift in Sources */,
 				564FB9632B1A745A00B2B523 /* PartyModel.swift in Sources */,
+				564FB9782B1A7DC000B2B523 /* PartyRowView.swift in Sources */,
 				564FB9762B1A7CD300B2B523 /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

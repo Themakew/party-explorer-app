@@ -18,7 +18,7 @@ struct HomeView<ViewModel: HomeViewModelProtocol>: View {
                     .padding(.horizontal)
 
                 List(viewModel.filteredParties) { partyObject in
-                    Text(partyObject.name)
+                    PartyRowView(partyObject: partyObject)
                 }
             }
             .navigationTitle("Parties")

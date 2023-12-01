@@ -11,7 +11,10 @@ import SwiftUI
 struct PartyExplorerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let apiRequest = APIRequest()
+            let service = PartyService(apiRequest: apiRequest)
+            let viewModel = HomeViewModel(service: service)
+            HomeView(viewModel: viewModel)
         }
     }
 }

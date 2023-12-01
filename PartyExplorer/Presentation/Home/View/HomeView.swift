@@ -17,6 +17,11 @@ struct HomeView<ViewModel: HomeViewModelProtocol>: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.horizontal)
 
+                Button("Add Random Party") {
+                    viewModel.generateRandomParty()
+                }
+                .padding()
+
                 List(viewModel.filteredParties) { partyObject in
                     PartyRowView(partyObject: partyObject)
                 }

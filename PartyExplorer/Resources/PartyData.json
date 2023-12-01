@@ -2,7 +2,7 @@
     {
         "id": "cef97f29-61b2-46f3-98fb-43779bff04d9",
         "name": "Beach Party",
-        "bannerImage": "beach",
+        "bannerName": "beach",
         "price": 49.99,
         "startDate": "12/01/2023",
         "attendeesCount": 10,
@@ -11,7 +11,7 @@
     {
         "id": "de874436-c4a5-44fe-9834-d45657302de1",
         "name": "Pool Party",
-        "bannerImage": "pool",
+        "bannerName": "pool",
         "price": 39.99,
         "startDate": "12/03/2023",
         "attendeesCount": 10,
@@ -20,7 +20,7 @@
     {
         "id": "f7d865c3-8128-463a-8eab-8beb5b5b2be4",
         "name": "Boat Party",
-        "bannerImage": "boat",
+        "bannerName": "boat",
         "price": 59.99,
         "startDate": "12/05/2023",
         "attendeesCount": 10,
@@ -29,7 +29,7 @@
     {
         "id": "87248e37-1cca-4bf6-8ce3-1e0034dce7c3",
         "name": "Rooftop Party",
-        "bannerImage": "rooftop",
+        "bannerName": "rooftop",
         "price": 44.99,
         "startDate": "12/07/2023",
         "attendeesCount": 10,
@@ -38,7 +38,7 @@
     {
         "id": "4bb83c72-b67a-47e1-a994-4418c2984ef1",
         "name": "Costume Party",
-        "bannerImage": "banner",
+        "bannerName": "banner",
         "price": 34.99,
         "startDate": "12/09/2023",
         "attendeesCount": 10,
@@ -47,7 +47,7 @@
     {
         "id": "780f6b4a-3671-4f7b-a1d9-a86b7c88c53a",
         "name": "Birthday Party",
-        "bannerImage": "birthday",
+        "bannerName": "birthday",
         "price": 29.99,
         "startDate": "12/11/2023",
         "attendeesCount": 10,
@@ -56,7 +56,7 @@
     {
         "id": "890fc85e-0225-4d93-bad3-35cdd5f0d213",
         "name": "Garden Party",
-        "bannerImage": "garden",
+        "bannerName": "garden",
         "price": 49.99,
         "startDate": "12/13/2023",
         "attendeesCount": 10,
@@ -65,7 +65,7 @@
     {
         "id": "43272a25-0334-4e6e-9cd4-3f54f8802e9f",
         "name": "Music Festival",
-        "bannerImage": "music",
+        "bannerName": "music",
         "price": 69.99,
         "startDate": "12/14/2023",
         "attendeesCount": 10,
@@ -74,7 +74,7 @@
     {
         "id": "db41a5ea-e1b1-4c16-a7c1-cd8310c127a5",
         "name": "New Year's Eve Party",
-        "bannerImage": "newYear",
+        "bannerName": "newYear",
         "price": 99.99,
         "startDate": "12/16/2023",
         "attendeesCount": 10,
@@ -83,7 +83,7 @@
     {
         "id": "bdded1ba-0167-4417-931e-e25e0fcd27b9",
         "name": "Halloween Party",
-        "bannerImage": "halloween",
+        "bannerName": "halloween",
         "price": 39.99,
         "startDate": "12/17/2023",
         "attendeesCount": 10,

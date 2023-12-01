@@ -15,6 +15,9 @@
 		564FB94D2B1A71F700B2B523 /* PartyExplorerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564FB94C2B1A71F700B2B523 /* PartyExplorerUITests.swift */; };
 		564FB94F2B1A71F700B2B523 /* PartyExplorerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564FB94E2B1A71F700B2B523 /* PartyExplorerUITestsLaunchTests.swift */; };
 		564FB95F2B1A736D00B2B523 /* PartyData.json in Resources */ = {isa = PBXBuildFile; fileRef = 564FB95E2B1A736D00B2B523 /* PartyData.json */; };
+		564FB9632B1A745A00B2B523 /* PartyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564FB9622B1A745A00B2B523 /* PartyModel.swift */; };
+		564FB9662B1A74F400B2B523 /* APIResquest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564FB9652B1A74F400B2B523 /* APIResquest.swift */; };
+		564FB9682B1A766D00B2B523 /* PartyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564FB9672B1A766D00B2B523 /* PartyService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		564FB94C2B1A71F700B2B523 /* PartyExplorerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyExplorerUITests.swift; sourceTree = "<group>"; };
 		564FB94E2B1A71F700B2B523 /* PartyExplorerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyExplorerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		564FB95E2B1A736D00B2B523 /* PartyData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PartyData.json; sourceTree = "<group>"; };
+		564FB9622B1A745A00B2B523 /* PartyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyModel.swift; sourceTree = "<group>"; };
+		564FB9652B1A74F400B2B523 /* APIResquest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResquest.swift; sourceTree = "<group>"; };
+		564FB9672B1A766D00B2B523 /* PartyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				564FB95C2B1A731600B2B523 /* App */,
+				564FB9642B1A74E300B2B523 /* Infrastructure */,
+				564FB9602B1A73D300B2B523 /* Data */,
 				564FB95D2B1A732100B2B523 /* Presentation */,
 				564FB95B2B1A72FE00B2B523 /* Resources */,
 				564FB9372B1A71F700B2B523 /* Preview Content */,
@@ -152,6 +160,31 @@
 				564FB9332B1A71F600B2B523 /* ContentView.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		564FB9602B1A73D300B2B523 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				564FB9612B1A744B00B2B523 /* Model */,
+				564FB9672B1A766D00B2B523 /* PartyService.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		564FB9612B1A744B00B2B523 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				564FB9622B1A745A00B2B523 /* PartyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		564FB9642B1A74E300B2B523 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				564FB9652B1A74F400B2B523 /* APIResquest.swift */,
+			);
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +320,9 @@
 			files = (
 				564FB9342B1A71F600B2B523 /* ContentView.swift in Sources */,
 				564FB9322B1A71F600B2B523 /* PartyExplorerApp.swift in Sources */,
+				564FB9682B1A766D00B2B523 /* PartyService.swift in Sources */,
+				564FB9662B1A74F400B2B523 /* APIResquest.swift in Sources */,
+				564FB9632B1A745A00B2B523 /* PartyModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

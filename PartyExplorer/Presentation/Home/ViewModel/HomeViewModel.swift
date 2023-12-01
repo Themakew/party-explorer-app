@@ -15,8 +15,12 @@ protocol HomeViewModelProtocol: ObservableObject {
 }
 
 final class HomeViewModel: HomeViewModelProtocol {
-    @Published var searchText: String = ""
     @Published var filteredParties = [PartyEntity]()
+    @Published var searchText: String = "" {
+        didSet {
+            filterParties()
+        }
+    }
 
     private let service: PartyServiceProtocol
     private var parties = [PartyEntity]()
@@ -34,6 +38,14 @@ final class HomeViewModel: HomeViewModelProtocol {
             filteredParties = parties
         } catch {
             // TODO
+        }
+    }
+
+    private func filterParties() {
+        if searchText.isEmpty {
+            filteredParties = parties
+        } else {
+            filteredParties = parties.filter { $0.name.lowercased().contains(searchText.lowercased()) }
         }
     }
 }
